@@ -1,0 +1,28 @@
+# ==========================================================
+# Smart Automated Access Gate - Raspberry Pi Dependencies
+# ----------------------------------------------------------
+# This file lists all Python packages required to run the
+# Raspberry Pi side of the Smart Gate project.
+#
+# Usage:
+#   pip3 install -r requirements.txt
+#
+# The Raspberry Pi handles:
+# - User authentication (keypad / fingerprint)
+# - Communication with Arduino via UART
+# - IP camera access and image/video processing
+# - Event logging and database management
+# - Web-based remote monitoring dashboard
+# ==========================================================
+
+# Serial communication with Arduino
+pyserial
+
+# Computer vision and people detection
+opencv-python
+
+# Numerical processing (required by OpenCV)
+numpy
+
+# Web dashboard and remote access
+flask
